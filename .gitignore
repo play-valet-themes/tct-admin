@@ -7,7 +7,6 @@ target
 /.settings
 /RUNNING_PID
 
-build.sbt
 webtools
 webtools.conf
 conf/db/migration/default
