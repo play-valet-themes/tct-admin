@@ -13,7 +13,7 @@
     </div>
         <!-- /.navbar-header -->
 
-    @views.html.admin.nav_header("")
+    @views.html.admin.components.nav_header("")
 
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
@@ -27,11 +27,25 @@
                             </button>
                         </span>
                     </div>
-                        <!-- /input-group -->
                 </li>
+
+
                 <li>
                     <a href="@routes.AdminController.index()"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                 </li>
+
+
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Database Cruds<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        @* BULLET-START-CUSTOM *@
+                        <li>
+                            <a href="a@* BULLET-URLLINK *@">a@* BULLET-TABLENAME *@</a>
+                        </li>
+                        @* BULLET-END-CUSTOM *@
+                    </ul>
+                </li>
+
                 <li>
                     <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
@@ -42,8 +56,9 @@
                             <a href="@routes.AdminController.morris()">Morris.js Charts</a>
                         </li>
                     </ul>
-                        <!-- /.nav-second-level -->
                 </li>
+
+
                 <li>
                     <a href="@routes.AdminController.tables()"><i class="fa fa-table fa-fw"></i> Tables</a>
                 </li>

@@ -1,6 +1,6 @@
 @(str:String)(implicit mesg: Messages, req: RequestHeader, lang: Lang)
 
-@views.html.admin.main("",
+@views.html.admin.components.main("",
     Seq("bower_components/datatables/media/css/dataTables.bootstrap.css",
         "bower_components/datatables-responsive/css/dataTables.responsive.css"),
     Seq("bower_components/datatables/media/js/jquery.dataTables.js",
@@ -18,7 +18,7 @@
 
     <div id="wrapper">
 
-    @views.html.admin.nav("")
+    @views.html.admin.components.nav("")
 
         <div id="page-wrapper">
             <div class="row">
